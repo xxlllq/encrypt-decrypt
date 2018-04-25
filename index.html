@@ -71,12 +71,12 @@
 			}
 		}
 
-		//不足指定位数补0
+		//补足指定位数补0
 		function PrefixInteger(num, length) {
 			return(Array(length).join('0') + num).slice(-length);
 		}
 
-		//不足指定位数补0
+		//移除首位0
 		function RemoveFirstZero(str) {
 			var result = str[0];
 			if(result == "0") {
